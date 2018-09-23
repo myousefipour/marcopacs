@@ -6,6 +6,7 @@ Template.exam.events({
 			}
 			else {
 				 
+				 console.log(Studies);
 			}
 		});
 
@@ -25,6 +26,10 @@ Template.exam.events({
 });
 Template.exam.helpers({
 	stdModel: function () {
-		return Session.get('examModel');;
+		return Studies.find();
 	}
 });
+
+if(Meteor.isClient) {
+	Meteor.subscribe('Studies');
+}

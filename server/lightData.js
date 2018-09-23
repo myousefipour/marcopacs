@@ -1,23 +1,23 @@
 // study objects for holding data
-var std1 = new Study();
-var std2 = new Study();
-var std3 = new Study();
-var std4 = new Study();
-var std5 = new Study();
+std1 = new Study();
+std2 = new Study();
+std3 = new Study();
+std4 = new Study();
+std5 = new Study();
 //tbox objects for holding data
-var t1 = new Tbox();
-var t2 = new Tbox();
-var t3 = new Tbox();
-var t4 = new Tbox();
-var t5 = new Tbox();
-var t6 = new Tbox();
-var t7 = new Tbox();
-var t8 = new Tbox();
-var t9 = new Tbox();
-var t10 = new Tbox();
-var t11 = new Tbox();
-var t12 = new Tbox();
-var t13 = new Tbox();
+t1 = new Tbox();
+t2 = new Tbox();
+t3 = new Tbox();
+t4 = new Tbox();
+t5 = new Tbox();
+t6 = new Tbox();
+t7 = new Tbox();
+t8 = new Tbox();
+t9 = new Tbox();
+t10 = new Tbox();
+t11 = new Tbox();
+t12 = new Tbox();
+t13 = new Tbox();
 std1 = {
     id: 101,
     patientName: 'ahmad khosravi',
@@ -127,7 +127,6 @@ t13 = {
     SeriesNumber : 13,
     Description : 'this is tbox13'
 };
- 
 std1.tboxes.push(t1, t3, t5, t7, t9);
 std2.tboxes.push(t1, t2, t4, t6, t8, t10);
 std3.tboxes.push(t11, t12);
