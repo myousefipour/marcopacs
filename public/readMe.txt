@@ -1,0 +1,1 @@
+this folder is for holding static files such as logo.png

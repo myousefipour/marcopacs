@@ -32,13 +32,13 @@ std2 = {
 }
 std3 = {
     id : 103,
-    patientName : 'tavana arjomand',
+    patientName : 'tavana yousefi',
     patientAge : 35,
     tboxes:[]
 }
 std4 = {
     id : 104,
-    patientName : 'shirin bani',
+    patientName : 'shirin amini',
     patientAge : 54,
     tboxes:[]
 }
