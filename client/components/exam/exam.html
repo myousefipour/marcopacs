@@ -1,4 +1,4 @@
-<template name="exam"> 
+<template name="exam">
     <label for="studyId" class="col-md-12">Study ID: </label>
     <div class="col-md-12">
         <div class="col-md-8">
@@ -11,7 +11,6 @@
             <button class="btn btn-primary btn-load-soap form-control" type="button">Load Soap</button>
         </div>
     </div>
-    <br>
     <div class="col-md-12">
         <div class="col-md-12">
             <div class="col-md-4">
@@ -19,14 +18,19 @@
                 <span name="patientName">{{stdModel.patientName}}</span>
             </div>
             <div class="col-md-4">
-                    <label for="patientName">Patient Age:</label>
-                    <span name="patientName">{{stdModel.patientAge}}</span>
-                </div>
+                <label for="patientName">Patient Age:</label>
+                <span name="patientName">{{stdModel.patientAge}}</span>
+            </div>
         </div>
         <div class="col-md-12">
-                {{#each stdModel.tboxes}}
-                {{> tmp_tbox_descriptivebox}}
-                {{/each}}
+            {{#each stdModel.tboxes}}
+            {{> tmp_tbox_descriptivebox}}
+            {{/each}}
         </div>
+    </div>
+    <div id="app" class="col-md-12 align-middle">
+        <span v-bind:title="message">
+            A True web PACS solution by <a href='https://wwww.marcopacs.com'>www.marcopacs.com</a>
+        </span>
     </div>
 </template>

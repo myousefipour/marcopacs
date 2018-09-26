@@ -38,6 +38,14 @@ Template.exam.helpers({
 			return item.value;
 	}
 });
+Template.exam.rendered = function() {
+	var app2 = new Vue({
+		el: '#app',
+		data: {
+		  message: 'You loaded this page on ' + new Date().toLocaleString()
+		}
+	  })
+};
 Tracker.autorun(() => {
 	Meteor.subscribe('getStudy', Session.get('tbItem'));
 });
