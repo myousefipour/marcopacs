@@ -24,5 +24,3 @@ iron:router
 twbs:bootstrap
 jquery
 session
-akryum:vue
-akryum:vue-component

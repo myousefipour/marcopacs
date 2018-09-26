@@ -1,0 +1,21 @@
+<template name="colors">
+    <h1>Colors Table</h1>
+
+    <div class="col-md-12">
+        <div class="col-md-8">
+
+        </div>
+        <div class="col-md-2">
+
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary btn-load-color form-control" type="button">Load Color</button>
+        </div>
+    </div>
+
+    <div class="tbl-color col-md-12">
+            {{#each listColors}}
+             <div style="color:#{{colorId}};font-size:14px;font-weight: bold;">{{colorId}}</div>
+            {{/each}}
+    </div>
+</template>

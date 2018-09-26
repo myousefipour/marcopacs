@@ -19,7 +19,7 @@ Template.exam.events({
 			}
 			else {
 				console.log('load soap successed...');
-				// console.log(result);
+				console.log(result);
 			}
 		});
 
@@ -38,14 +38,15 @@ Template.exam.helpers({
 			return item.value;
 	}
 });
-Template.exam.rendered = function() {
-	var app2 = new Vue({
-		el: '#app',
-		data: {
-		  message: 'You loaded this page on ' + new Date().toLocaleString()
-		}
-	  })
-};
+// Template.exam.rendered = function() {
+// 	var app2 = new Vue({
+// 		el: '#app',
+// 		data: {
+// 		  message: 'You loaded this page on ' + new Date().toLocaleString()
+// 		}
+// 	  })
+// };
 Tracker.autorun(() => {
-	Meteor.subscribe('getStudy', Session.get('tbItem'));
+	if (Session.get('tbItem') !== null && Session.get('tbItem') !== undefined)
+		Meteor.subscribe('getStudy', Session.get('tbItem'));
 });
