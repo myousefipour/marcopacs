@@ -12,18 +12,6 @@ Template.exam.events({
 		});
 
 	},
-	"click .btn-load-soap": function (event) {
-		Meteor.call('loadSoap', function (error, result) {
-			if (error) {
-				console.log('error', error);
-			}
-			else {
-				console.log('load soap successed...');
-				console.log(result);
-			}
-		});
-
-	},
 	"keypress input.txt-study-id": function (event) {
 		if (event.which === 13) {
 			var searchQuery = $('.txt-study-id').val().toString();

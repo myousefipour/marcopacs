@@ -1,33 +1,30 @@
 <template name="exam">
     <label for="studyId" class="col-md-12">Study ID: </label>
     <div class="col-md-12">
-        <div class="col-md-8">
+        <div class="col-md-10">
             <input type="text" class="form-control txt-study-id" placeholder="Insert study id" name="studyId">
         </div>
         <div class="col-md-2">
             <button class="btn btn-primary btn-load-study form-control" type="button">Subscribe Study</button>
         </div>
-        <div class="col-md-2">
-            <button class="btn btn-primary btn-load-soap form-control" type="button">Load Soap</button>
+    </div>
+
+    <div class="col-md-12">
+        <div class="col-md-4">
+            <label for="patientName">Patient Name:</label>
+            <span name="patientName">{{stdModel.patientName}}</span>
+        </div>
+        <div class="col-md-4">
+            <label for="patientName">Patient Age:</label>
+            <span name="patientName">{{stdModel.patientAge}}</span>
         </div>
     </div>
     <div class="col-md-12">
-        <div class="col-md-12">
-            <div class="col-md-4">
-                <label for="patientName">Patient Name:</label>
-                <span name="patientName">{{stdModel.patientName}}</span>
-            </div>
-            <div class="col-md-4">
-                <label for="patientName">Patient Age:</label>
-                <span name="patientName">{{stdModel.patientAge}}</span>
-            </div>
-        </div>
-        <div class="col-md-12">
-            {{#each stdModel.tboxes}}
-            {{> tmp_tbox_descriptivebox}}
-            {{/each}}
-        </div>
+        {{#each stdModel.tboxes}}
+        {{> tmp_tbox_descriptivebox}}
+        {{/each}}
     </div>
+
     <!-- <div id="app" class="col-md-12 align-middle">
         <span v-bind:title="message">
             A True web PACS solution by <a href='https://wwww.marcopacs.com'>www.marcopacs.com</a>
