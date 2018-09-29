@@ -10,6 +10,7 @@
   "dependencies": {
     "@babel/runtime": "7.0.0-beta.55",
     "meteor-node-stubs": "^0.4.1",
+    "soap": "^0.25.0",
     "vue": "^1.0.24",
     "vue-meteor-tracker": "^1.0.3"
   },
