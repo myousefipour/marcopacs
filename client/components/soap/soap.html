@@ -2,18 +2,41 @@
 
     <div class="container">
         <div class="row">
+            <h4>Soap Service Example</h4>
+            <div class="col-md-12 wsdl-example" style="color:gray;">
+                <h6>http://www.nbrb.by/Services/ExRates.asmx?WSDL</h6>
+                <h6>http://devel.marcopacs.com/PCM/Exam.svc?wsdl</h6>
+                <h6>http://ali-pc.marcopacs.com/PCM/Exam.svc?wsdl</h6>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-md-12">
+                    <h1>Load Soap Describe</h1>
+                </div>
+                <div class="col-md-12">
+                    <div class="col-md-10">
+                        <input type="text" class="form-control txt-soap-url" placeholder="Soap Service Url">
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary from-control btn-load-describe">Load Soap Describe</button>
+                    </div>
+                </div>
+                <div class="col-md-12 soap-describe-body"> 
+                </div>
+            </div>
+        <div class="row">
             <div class="col-md-12">
-                <h1>Call Soap Service</h1>
+                <h1>Call Search Exam Method</h1>
             </div>
             <div class="col-md-12">
                 <div class="col-md-10">
-                    <input type="text" class="form-control txt-soap-url" placeholder="Soap Service Url">
+                    
                 </div>
                 <div class="col-md-2">
-                    <button class="btn btn-primary from-control btn-load-soap">Load Soap Service</button>
+                    <button class="btn btn-primary from-control btn-load-soap">Search</button>
                 </div>
             </div>
-            <div class="col-md-12 soap-body">
+            <div class="col-md-12 soap-method-body">
 
             </div>
         </div>
