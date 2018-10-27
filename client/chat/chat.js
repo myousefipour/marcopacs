@@ -8,14 +8,14 @@ Template.chat.helpers({
          
     },  
     destroyed: function() { 
-          
+           
     }, 
 }); 
 
-Template.chat.events({ 
+Template.chat.events({   
     'click .btn-submit-auth': function(event, template) { 
         login($('#exampleInputEmail1').val() , $('#exampleInputPassword1').val()).then((response) => {
-            document.getElementById('meesage-panel').contentWindow.postMessage({
+            document.getElementById('meesage-p anel').contentWindow.postMessage({
                 externalCommand: 'login-with-token',
                 token: response.data.authToken
             }, '*');
