@@ -8,7 +8,7 @@ Template.chat.helpers({
          
     }, 
     destroyed: function() { 
-         
+          
     }, 
 }); 
 
