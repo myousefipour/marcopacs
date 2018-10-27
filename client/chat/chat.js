@@ -6,7 +6,7 @@ Template.chat.helpers({
     }, 
     rendered: function() { 
          
-    }, 
+    },  
     destroyed: function() { 
           
     }, 
